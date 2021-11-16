@@ -5,7 +5,6 @@ from loader import dp
 
 translator = Translator()
 
-
 @dp.message_handler()
 async def message_javob(message: types.Message):
     til = translator.detect(message.text).lang
