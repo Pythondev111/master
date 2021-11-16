@@ -20,5 +20,5 @@ async def message_javob(message: types.Message):
 
 
     else:
-        dest = 'en'
+        dest = 'ru'
         await message.reply(translator.translate(message.text, dest).text)
