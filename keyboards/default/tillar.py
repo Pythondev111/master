@@ -1,13 +1,11 @@
-from aiogram.types import InlineKeyboardButton,InlineKeyboardMarkup
-
-onatili_buttons = InlineKeyboardMarkup(
-    inline_keyboard=[
+from aiogram.types import  ReplyKeyboardMarkup,KeyboardButton
+buttons = ReplyKeyboardMarkup(
+    keyboard=[
         [
-            InlineKeyboardButton(text='Rus tili',callback_data='ru'),
-            InlineKeyboardButton(text="O'zbek tili",callback_data= 'uz'),
+            KeyboardButton(text='Rus--Uzb',),
+            KeyboardButton(text="Uzb--Rus",),
 
         ],
-
 
     ],
     resize_keyboard = True
