@@ -8,7 +8,7 @@ translator = Translator()
 
 @dp.message_handler()
 async def message_javob(message: types.Message):
-    til = translator.detect(message.text)
+    til = translator.detect(message.text).lang
     print(til)
 
     if til == 'uz':
